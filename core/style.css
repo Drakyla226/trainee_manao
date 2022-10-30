@@ -1,0 +1,192 @@
+body{
+    width: 99%;
+    height: 100%;
+    color: #000;
+    font-family: "Segoe UI", sans-serif;
+
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 150%;
+    background-image: url(./images/background.jpg);
+    background-size: 100%;
+}
+
+.inform{
+  position: fixed;
+  width: 300px;
+  top: 10px;
+  right: 30px;
+  text-align: right;
+  color: red;
+  font-weight: 600;
+}
+
+main{
+  text-align: center;
+}
+
+input{
+    background: none;
+    border: 1px solid grey;
+    border-radius: 17px;
+    outline: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.user_auth{
+  position: fixed;
+  height: 30px;
+  width: 99%;
+  top: 10px;
+  text-align: center;
+  color: red;
+  font-weight: 600;
+  font-stretch: normal;
+}
+
+.back_main{
+  position: fixed;
+  height: 30px;
+  width: 100px;
+  left: 20px;
+  top: 5px;
+  text-align: center;
+}
+
+#back_main{
+  color: black;
+}
+
+#back_main:hover{
+  color: red;
+  opacity: 1;
+  transition: all .2s linear;
+}
+
+/* ТЕКСТ ПОЛЬЗОВАТЕЛЮ */
+
+.user_text{
+    font-weight: 500;
+    color: blue;
+    margin-bottom: 10px ;
+}
+
+/* ФОРМА И КНОПКИ АВТОРИЗАЦИИ */
+
+.block_auth{
+    width: 100%;
+    height: auto;
+    padding-top: 1%;
+}
+
+.main_auth{
+    width: 100%;
+    height: auto;
+    display: block;
+    text-align: center;
+}
+
+.form_auth{
+    width: auto;
+    height: auto;
+}
+.br_auth{
+    margin-top: 10px;
+    width: 350px;
+    height: 40px;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.but_{
+    margin: 7px 5px;
+    border-radius: 25px;
+}
+
+#auth_, #reg_, #reg__, #log_in{
+    width: 130px;
+    height: 45px;
+    color: white;
+    transition: all .3s linear;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#auth_{
+    background-color: green;
+}
+
+#log_in{
+    width: 170px;
+    background-color: green;
+}
+
+#reg_{
+    width: 200px;
+    background-color: blue;
+}
+
+#reg__{
+    width: 220px;
+    background-color: blue;
+}
+
+#log_in:hover{
+  background-color: #34C924;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+
+#reg_:hover, #reg__:hover{
+    background-color: #5761E5;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+#auth_:hover{
+    background-color: #34C924;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.a_reg{
+    color: white;
+}
+
+.res_pass{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.res_pass:hover{
+    color: red;
+}
+
+/*ССЫЛКИ НА РАБОТУ С CRUD*/
+ul{
+  list-style: none;
+}
+
+.li_db{
+  font-size: 22px;
+  font-weight: 400;
+  color: blue;
+}
+
+a#li_db:hover{
+  height: auto;
+  color: green;
+  margin: 0 50px;
+  text-decoration: underline;
+  transition: all .3s linear;
+  font-size: 170%;
+  text-transform: capitalize;
+}
