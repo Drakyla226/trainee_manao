@@ -1,9 +1,10 @@
-<?php session_start();?>
-<?php
+<?php session_start();
 $j_db = $_SERVER[DOCUMENT_ROOT]."/core/db_users.json";
 require ($_SERVER[DOCUMENT_ROOT]."/core/class/CRUD.php");
-#Если JSON файла нет, создаем его пустым
-if (!file_exists($j_db)){
+
+#Если JSON файла не существует или не соответствует формату JSON
+#создаем файл пустым
+if (!file_exists($j_db) or json_last_error() !== JSON_ERROR_NONE){
   file_put_contents($j_db,'');
 }
   ?>

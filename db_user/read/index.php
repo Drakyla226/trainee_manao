@@ -1,4 +1,4 @@
-<?php $title_name="Работа с БД" ?>
+<?php $title_name="Чтение" ?>
 <?php require ($_SERVER[DOCUMENT_ROOT]."/core/header.php") ?>
 
 <?php

@@ -1,4 +1,4 @@
-<?php $title_name="Работа с БД" ?>
+<?php $title_name="Удаление" ?>
 <?php require ($_SERVER[DOCUMENT_ROOT]."/core/header.php") ?>
 
 
@@ -13,8 +13,7 @@
             $res = new CRUD();
             $result = $res->delete_user($login);
             if ($result == "ok") {
-              header("Location: /db_user");
-              exti();
+              echo "Пользователь '".$login."' успешно удален";
             }
             else {
               echo 'Пользователь "'.$login.'" отсутствет в БД. ';

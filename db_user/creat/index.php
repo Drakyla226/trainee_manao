@@ -1,4 +1,4 @@
-<?php $title_name="Работа с БД" ?>
+<?php $title_name="Добавленик" ?>
 <?php require ($_SERVER[DOCUMENT_ROOT]."/core/header.php") ?>
   <main>
 
@@ -38,11 +38,8 @@
               <button class="but_" type="submit" id="reg__" name="Register">Добавить пользователя</button>
             </form>
             <?php
-            if ($res_reg == "no") {echo "Пользователь или email уже зарегистрирован";}
-            elseif($res_reg == "ok") {echo "Пользователь успешно добавлен";
-              header("Location: /db_user");
-              exit();
-            }
+              if ($res_reg == "no") {echo "Пользователь или email уже заняты";}
+              elseif($res_reg == "ok") {echo "Пользователь '".$login."' успешно добавлен";}
             ?>
         </div>
     </div>

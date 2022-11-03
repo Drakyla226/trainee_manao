@@ -1,4 +1,4 @@
-<?php $title_name="Работа с БД" ?>
+<?php $title_name="Изменение" ?>
 <?php require ($_SERVER[DOCUMENT_ROOT]."/core/header.php") ?>
   <main>
     <form class="form_auth" method="POST">
@@ -30,16 +30,6 @@
 
 
         <?php
-            if (isset($_POST['Login']) and isset($_POST['Password']) and isset($_POST['Email']) and isset($_POST['Name'])){
-                $login = $_POST['Login'];
-                $password = $_POST['Password'];
-                $email = $_POST['Email'];
-                $name = $_POST['Name'];
-                $res = new CRUD();
-                $result = $res->update_user($login, $password, $email, $name);
-                header("Location: /db_user");
-                exti();
-            }
             if ($ress == "ok"){
         ?>
 
@@ -56,8 +46,17 @@
       <button class="but_" type="submit" id="reg__" name="Register">Изменить данные</button>
     </form>
     <?php
-    if ($ress == "no") {
-      echo 'Пользователь "'.$login.'" отсутствет в БД. ';
-    } ?>
+      if (isset($_POST['Login']) and isset($_POST['Password']) and isset($_POST['Email']) and isset($_POST['Name'])){
+        $login = $_POST['Login'];
+        $password = $_POST['Password'];
+        $email = $_POST['Email'];
+        $name = $_POST['Name'];
+        $res = new CRUD();
+        $result = $res->update_user($login, $password, $email, $name);
+        echo "Данные пользователя '".$login."' успешно изменены.";
+      }
+      if ($ress == "no") {
+        echo "Пользователь '".$login."' отсутствет в БД.";
+      } ?>
   </main>
 <?php require ($_SERVER[DOCUMENT_ROOT]."/core/footer.php") ?>
