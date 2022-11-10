@@ -92,6 +92,10 @@ a{
     margin-bottom: 10px ;
 }
 
+.span_red{
+    color: red;
+}
+
 /* ФОРМА И КНОПКИ АВТОРИЗАЦИИ */
 
 .block_auth{
